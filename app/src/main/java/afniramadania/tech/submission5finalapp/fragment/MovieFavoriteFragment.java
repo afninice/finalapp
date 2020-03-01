@@ -162,11 +162,11 @@ public class MovieFavoriteFragment extends Fragment {
             return context.getContentResolver().query(CONTENT_URI, null, null, null, null);
         }
 
-        @Override
-        protected void onPostExecute(Cursor cursor) {
-            super.onPostExecute(cursor);
-            weakCallback.get().postExecute(cursor);
-        }
+//        @Override
+//        protected void onPostExecute(Cursor cursor) {
+//            super.onPostExecute(cursor);
+//            weakCallback.get().postExecute(cursor);
+//        }
     }
 
     static class DataObserver extends ContentObserver {

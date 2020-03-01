@@ -110,7 +110,7 @@ public class DetailMovieActivity extends AppCompatActivity {
                 releaseDate = movie.getReleaseDate();
                 rating = movie.getRating().toString();
                 overview = movie.getOverview();
-                checkFavorite();
+ //               checkFavorite();
                 if (movie.getOverview().length() == 0) {
                     txtOverview.setText(getResources().getString(R.string.not_found));
                 } else {
